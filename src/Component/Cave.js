@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style.css'
-import arrow from '../arrow-icon.png'
+import arrow from '../arrow-icon2.png'
 import axios from 'axios';
 
 const urlCave = "http://localhost:8080/cave"
