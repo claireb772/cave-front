@@ -3,11 +3,28 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import CaveApp from './Component/Cave';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+import Accueil from './Component/Accueil';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+    <Route exact path="/" element={<Accueil />}>
+    
+    </Route>
+    <Route path="/cave" element={<CaveApp />}>
+    
+    </Route>
+    </Routes>
+    </Router>
+
   </React.StrictMode>
 );
 

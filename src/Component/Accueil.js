@@ -1,15 +1,19 @@
 import "../style.css"
-import Cave from './Cave';
+import { Link } from 'react-router-dom'
+
 
 function Accueil() {
 
     
     return (
 
-        <div class="container">
-            <h1>Bienvenue dans notre application Web Service Rest</h1>
-            <button onClick={()=> <Cave />}>La Cave à vin</button>
+        <div className="container">
 
+            <h1>Bienvenue dans notre application Web Service Rest</h1>
+
+            <div className="lien">
+            <Link to="/cave">La Cave à vin</Link>
+            </div>
         </div>
 
 

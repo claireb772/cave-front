@@ -1,13 +1,11 @@
 .container {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 200px;
 }
 
-h1 {
-    margin-bottom: 50px;
-}
 
 img {
     width:20px;
@@ -17,4 +15,14 @@ button {
     border : none;
     text-decoration: none;
     background-color: #ffff;
+}
+
+.lien a{
+    text-decoration: none!important;
+    
+}
+
+.lien {
+    text-align: center;
+    font-size: 50px;
 }
